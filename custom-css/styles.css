@@ -1,0 +1,33 @@
+.header-style-3 .main-navigation>ul>li>a, .header-style-4 .main-navigation>ul>li>a, .header-style-5 .main-navigation>ul>li>a {
+	padding: 0 20px;
+}
+
+img,video,iframe,svg,button,a,input {
+	user-select: none;
+}
+
+body *::selection {
+		background: #620202;
+		color: #ffeccc;
+}
+
+a:focus {
+    outline: 0px dotted;
+    text-decoration: none;
+}
+
+.page-id-553 img[alt="Διοικητικό Συμβούλιο"] {
+	display: none;
+}
+
+body.page section.page.type-page img {
+	border-radius: 8px;		
+}
+
+.page-wrap {
+	background: #fff6e7;
+}
+
+footer {
+    background: #ffcc76;
+}
