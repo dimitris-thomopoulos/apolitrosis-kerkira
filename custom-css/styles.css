@@ -154,6 +154,12 @@ body.home div.owl-item div.item div {
 
 
 
+/* Homepage recent posts hide xairetismous */
+
+#post-353, #post-328 {
+    display: none;
+}
+
 /* Hide author and category in homepage slider cards */
 
 body.home div.owl-item div.item div div.metas, body.home div.owl-item div.item div div.entry-cats {
@@ -367,6 +373,7 @@ table#wp-calendar #today {
 table#wp-calendar #today:hover {
 	background: #ffc545;
 	transition: all 0.3s ease-in-out;
+	color: black;
 }
 
 table#wp-calendar #today:hover > a {
@@ -419,7 +426,18 @@ aside .widget-title {
 		border-radius: 5px;
 }
 
+#wp-calendar > tbody > tr > td > a {
+    font-weight: 700;
+    color: #620202;
+    border-bottom: 1px solid #620202;
+	transition: all 0.2s ease-in-out;
+}
 
+#wp-calendar > tbody > tr > td > a:hover {
+	color: red;
+	border-color: red;
+	transition: all 0.2s ease-in-out;
+}
 
 /* sidebar categories widget styles */
 
@@ -451,6 +469,10 @@ footer .widget .widget-title h3, footer .section-title {
 
 footer a {
     color: #edd7bb;
+}
+
+#cream-blog-post-widget-1 > div.post-widget-container > div > div:nth-child(1) > div {
+	border-radius: 5px;
 }
 
 footer .widget .widget-title h3, footer .section-title {
