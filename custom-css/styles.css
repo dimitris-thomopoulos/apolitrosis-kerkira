@@ -2,10 +2,6 @@ body * {
 	font-family: 'Literata';
 }
 
-aside .widget_calendar .widget-title h3 {
-	font-family: 'Literata';
-}
-
 .header-style-3 .main-navigation>ul>li>a, .header-style-4 .main-navigation>ul>li>a, .header-style-5 .main-navigation>ul>li>a {
 	padding: 0 20px;
 }
@@ -24,11 +20,45 @@ a:focus {
     text-decoration: none;
 }
 
+
+
+
+/* homepage slider right box margin bottom */
+
+@media(min-width: 768px) {
+	
+	.cb-banner-style-6 .right-gutter 	{
+		margin-bottom: 60px;
+	}
+	
+}
+
+
+
 /* dioikitiko sumvoulio hide dupicate featured image */
 
 .page-id-553 img[alt="Διοικητικό Συμβούλιο"] {
 	display: none;
 }
+
+
+
+/* homepage recent posts read more button style */
+
+.cb-recent-posts .permalink .btn-general {
+    font-size: 15px;
+    padding: 13px 20px;
+    border-radius: 5px;
+		font-family: 'literata' !important;
+}
+
+.cb-recent-posts .permalink .btn-general:hover {
+    background-color: #f8bd38;
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.7);
+}
+
+
 
 /* Navigation menu stretch out */
 
@@ -50,6 +80,8 @@ div.is-sticky #cb-stickhead {
 #cb-stickhead {
 	z-index: 3;
 }
+
+
 
 /* Anchor tags hover color */
 
@@ -78,6 +110,9 @@ a:hover {
 		text-decoration: underline !important;
 }
 
+
+
+
 /* Back to top hover color */
 
 #toTop {
@@ -87,6 +122,7 @@ a:hover {
 #toTop:hover {
 	background-color: #cf0303;
 }
+
 
 
 
@@ -108,11 +144,15 @@ body.home div.owl-item div.item div {
 	display: none;
 }
 
+
+
 /*Homepage recent posts exceprt justify */
 
 .post-title + .excerpt p {
     text-align: justify;
 }
+
+
 
 /* Hide author and category in homepage slider cards */
 
@@ -123,6 +163,7 @@ body.home div.owl-item div.item div div.metas, body.home div.owl-item div.item d
 li.posted-date span.meta-name {
 	font-family: 'Literata' !important;
 }
+
 
 
 /* Slider pagination coloring */
@@ -137,6 +178,7 @@ li.posted-date span.meta-name {
 }
 
 
+
 /* Blog post list hide category and author */
 
 .post-contents .entry-cats {
@@ -146,6 +188,8 @@ li.posted-date span.meta-name {
 .post-contents .metas .posted-by {
 	display: none;
 }
+
+
 
 
 /* single pοst image border styles */
@@ -165,6 +209,8 @@ section.post .single-thumbnail > img {
 .wp-block-image:not(.is-style-rounded) img {
 	border-radius: 10px;
 }
+
+
 
 /* single post hide comments and author section */
 
@@ -187,6 +233,8 @@ ul.metas-list .li-comment {
 li.comment {
 	display: none;
 }
+
+
 
 /* single post next/prev post styles */
 
@@ -216,12 +264,22 @@ li.comment {
     background: #ffd01300;
 }
 
+
+/* single post hide tags meta */
+
+div.entry-tags {
+	display: none;
+}
+
+
 /* Posts results - bricks style */
 
 .cb-post-bricks #bricks-row .brick-item .post-contents {
 	box-shadow: 0 -2px 16px 0 rgb(0 0 0 / 60%);
 	background-color: #3f271717;
 }
+
+
 
 /* sidebar searchbar styles */
 
@@ -246,12 +304,57 @@ input[type="search"]:focus {
 }
 
 
+
+/* sidebar searchbar spacing */
+
+.sidebar-layout-two .widget#block-2 {
+	padding: 0 15px 30px;
+	margin-top: -5px;
+	margin-bottom: 0;
+}
+
+
+
+/* sidebar titles styles */
+
+
+aside #block-3.widget_block > div > div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+aside #block-3.widget_block > div > div > h2 {
+	  font-size: 16px;
+    background-color: #3f2717;
+    color: white;
+    text-align: center;
+    padding: 12px 10px;
+    font-weight: 400;
+    border-radius: 5px;
+		line-height: 1;
+}
+
+aside .widget_calendar .widget-title h3 {
+	font-family: 'Literata';
+	line-height: 0.5 !important;
+}
+
+aside .widget_categories .widget-title h3 {
+	font-family: 'Literata';
+	line-height: 0.5 !important;
+}
+
+
+
+
 /* sidebar recent posts list style */
 
 .wp-block-latest-posts.wp-block-latest-posts__list {
 	list-style: inside;
 	margin-left: 0 !important;
 }
+
+
 
 /* sidebar archive calendar styles */
 
@@ -316,6 +419,16 @@ aside .widget-title {
 		border-radius: 5px;
 }
 
+
+
+/* sidebar categories widget styles */
+
+aside .widget#categories-2 {
+	padding: 45px 30px 30px;
+}
+
+
+
 /* footer styles */
 
 footer {
@@ -326,15 +439,76 @@ body > div.page-wrap > footer > div > div > div.cb-topfooter {
 	display: none;
 }
 
+body > div.page-wrap > footer > div > div > div.cb-midfooter > div > div:nth-child(1) {
+	display: flex;
+	align-items: center;
+}
+
 footer .widget .widget-title h3, footer .section-title {
 	border-color: #fff6e7;
 	color: #fff6e7;
 }
 
 footer a {
-	color: #fff6e7;
+    color: #edd7bb;
+}
+
+footer .widget .widget-title h3, footer .section-title {
+    font-family: 'Literata';
+}
+
+@media(min-width: 992px) {
+	body > div.page-wrap > footer > div > div > div.cb-midfooter > div > div:nth-child(2) {
+		padding-left: 50px;
+	}
+}
+
+#custom_html-3 > div.textwidget.custom-html-widget {
+    color: #edd7bb;
+}
+
+footer .cb-midfooter {
+	border-bottom: 1px solid #f3ecec47;
 }
 
 .copyrights-info {
-	color: #fff6e7e0;
+    color: #b39b7c;
+}
+
+/* copyright footer hide theme info */
+
+body > div.page-wrap > footer > div > div > div.cb-bottomfooter {
+	display: none;
+}
+
+body > div.page-wrap > footer > div > div > div.cb-midfooter > div > div:nth-child(4) {
+	  border-top: 1px solid #f3ecec47;
+    max-width: 90%;
+		margin: 0 auto;
+    flex: 0 0 100%;
+    color: #b39b7c;
+    text-align: center;
+}
+
+body > div.page-wrap > footer > div > div > div.cb-midfooter > div > div:nth-child(4) > div {
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+body > div.page-wrap > footer > div > div > div.cb-midfooter > div > div:nth-child(4) > div > div {
+	padding-top: 20px;
+}
+
+
+/* 404 error page styles */
+
+.error-page-bottom .btn-general {
+	border-radius: 5px;
+	font-family: 'Literata' !important;
+}
+
+.error-page-bottom .btn-general:hover {
+	  background-color: #f8bd38;
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.7);
 }
