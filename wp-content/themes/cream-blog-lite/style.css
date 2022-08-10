@@ -1,0 +1,660 @@
+/**
+ Theme Name: Cream Blog Lite
+ Theme URI: https://themebeez.com/themes/cream-blog-lite/
+ Author: themebeez
+ Author URI: https://themebeez.com/ 
+ Template: cream-blog
+ Version: 1.0.2
+ Tested up to: 5.7
+ Requires PHP: 7.0
+ Description: Cream Blog Lite is a child theme of WordPress theme, Cream Blog. Cream Blog Lite is clean, responsive, user friendly and easily customizable. Cream Blog Lite is light weight and can be used to create and run magazine, blog and other online publishing websites. With one click demo import, it is easy to setup your website. Cream Blog Lite is translation ready. For demos and more information visit, https://themebeez.com/themes/cream-blog-lite.
+ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, news, blog, custom-header, theme-options, footer-widgets, sticky-post, grid-layout, two-columns, three-columns
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain: cream-blog-lite
+ */
+
+ body * {
+	font-family: 'Literata';
+}
+
+.header-style-3 .main-navigation>ul>li>a, .header-style-4 .main-navigation>ul>li>a, .header-style-5 .main-navigation>ul>li>a {
+	padding: 0 20px;
+}
+
+img,video,iframe,svg,button,a,input {
+	user-select: none;
+}
+
+body *::selection {
+		background: #620202;
+		color: #ffeccc;
+}
+
+a:focus {
+    outline: 0px dotted;
+    text-decoration: none;
+}
+
+
+/* header transparent logotype size */
+
+@media(min-width: 681px) {
+	div.site-branding > a.custom-logo-link > img, body > div.page-wrap > header > div > div.cb-header-top > div.cb-container > div > div > h1 > a > img {
+	max-width: 650px;
+	}
+}
+
+/* homepage slider right box margin bottom */
+
+@media(min-width: 768px) {
+	
+	.cb-banner-style-6 .right-gutter 	{
+		margin-bottom: 60px;
+	}
+	
+}
+
+
+
+/* dioikitiko sumvoulio hide dupicate featured image */
+
+.page-id-553 img[alt="Διοικητικό Συμβούλιο"] {
+	display: none;
+}
+
+
+
+/* homepage recent posts read more button style */
+
+.cb-recent-posts .permalink .btn-general {
+    font-size: 15px;
+    padding: 13px 20px;
+    border-radius: 5px;
+		font-family: 'literata' !important;
+}
+
+.cb-recent-posts .permalink .btn-general:hover {
+    background-color: #f8bd38;
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.7);
+}
+
+
+/* homepage recent posts views styles */
+
+.cb-recent-posts .excerpt .post-views {
+	margin-bottom: 10px;
+	border: 1px solid rgba(0,0,0,0.1);
+	box-shadow: none;
+	padding: 0px 12px;
+}
+
+.cb-recent-posts .excerpt .post-views br {
+	display: none;
+}
+
+
+/* Navigation menu stretch out */
+
+#cb-stickhead .cb-container {
+    max-width: none;
+}
+
+.header-style-3 .main-navigation>ul {
+	text-align: center;
+}
+
+@media (max-width: 991px) {
+	.header-style-3 .main-navigation>ul {
+		text-align: left;
+	}
+}
+
+.header-style-3 .main-navigation>ul>li>a {
+	padding: 5px 16px;
+}
+
+@media (max-width: 1440px) {
+	.header-style-3 .main-navigation>ul>li>a {
+		padding: 5px 10px;
+	}
+}
+
+div.is-sticky #cb-stickhead {
+	box-shadow: rgb(0 0 0 / 63%) 0px 4px 12px 0px;
+}
+
+.nav-extraa {
+    display: none !important;
+}
+
+
+/* Mobile nav dropdown menu z-index fix */
+
+#cb-stickhead {
+	z-index: 3;
+}
+
+
+
+/* Anchor tags hover color */
+
+.cb-post-widget .metas .metas-list li a:hover, .main-navigation>ul>li>a:hover, .metas-list li a:hover, body .edit-link a:hover {
+	color: #ffd013;
+}
+
+#cb-banner-style-9 .item .thumb:hover .post-contents .post-title h3 a, .cb-bottomfooter a:hover, .cb-topfooter .social-icons-list li a:hover, .header-style-4 .social-icons li a, .header-style-4 .social-icons li a:hover, .header-style-5 .social-icons li a, .header-style-5 .social-icons li a:hover, .secondary-nav ul li a:hover, .widget_archive a:hover, .widget_categories a:hover, .widget_meta a:hover, .widget_nav_menu li a:hover, .widget_pages li a:hover, .widget_product_categories a:hover, .widget_recent_entries a:hover, .widget_rss li a:hover, .widget_rss ul li a:hover, .woocommerce-widget-layered-nav ul li a:hover, a:hover {
+	color: #ffd013;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+.post-title h3 a:hover {
+	color: #cf0303;
+}
+
+.cb-editor-contents-entry a {
+    color: #620202;
+}
+
+.cb-entry a:hover {
+    color: #cf0303;
+		text-decoration: underline !important;
+}
+
+
+
+
+/* Back to top hover color */
+
+#toTop {
+	background-color: #620202;
+}
+
+#toTop:hover {
+	background-color: #cf0303;
+}
+
+
+
+
+/* Homepage slider cards round border */
+
+.border {
+    border-radius: 10px;
+}
+
+.cb-banner-style-6 .thumb {
+	border-radius: 10px;
+}
+
+.cb-banner-style-6 .thumb a:hover {
+	color: #ffd013 !important;
+}
+
+.cb-banner-style-6 .thumb .metas {
+	display: none;
+}
+
+
+
+/*Homepage recent posts exceprt styles */
+
+.post-title + .excerpt p {
+    text-align: justify;
+}
+
+.cb-list-style-2 .excerpt p {
+    margin-bottom: 8px;
+}
+
+
+
+/* Homepage recent posts hide xairetismous */
+
+.home #post-353, .home #post-328 {
+    display: none;
+}
+
+/* Hide author and category in homepage slider cards */
+
+body.home div.owl-item div.item div div.metas, body.home div.owl-item div.item div div.entry-cats {
+	display: none;
+}
+
+li.posted-date span.meta-name {
+	font-family: 'Literata' !important;
+}
+
+
+
+/* Slider pagination coloring */
+
+.cb-pagination .pagi-style-1 .nav-links a {
+	border-color: #620202;
+}
+
+.cb-pagination .pagi-style-1 .nav-links a:hover {
+	border-color: #b87e58;
+	background-color: #b87e58;
+}
+
+/* images border radius */
+
+.border {
+	border-radius: 10px;
+}
+
+/* Blog post list hide category and author */
+
+.post-contents .entry-cats {
+    display: none;
+}
+
+.post-contents .metas .posted-by {
+	display: none;
+}
+
+
+
+
+/* single pοst image border styles */
+
+body.page section.page.type-page img {
+	border-radius: 8px;		
+}
+
+.page-wrap {
+	background: #fff6e7;
+}
+
+section.post .single-thumbnail > img {
+	border-radius: 10px;
+}
+
+.wp-block-image:not(.is-style-rounded) img {
+	border-radius: 10px;
+}
+
+
+
+/* single post views styling */
+
+.post-views {  
+		display: inline-block;
+    background: #ffeac7;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.3);
+		font-family: 'Literata' !important;
+}
+
+/* single post hide comments and author section */
+
+#comments {
+	display: none;
+}
+
+.author-box {
+	display: none;
+}
+
+ul.metas-list li.posted-by {
+    display: none !important;
+}
+
+ul.metas-list .li-comment {
+	display: none;
+}
+
+li.comment {
+	display: none;
+}
+
+
+
+/* single post next/prev post styles */
+
+.post-navigation .nav-links {
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 1px solid #6202022b;
+    border-radius: 10px;
+    background: #fff6e7;
+    box-shadow: inset 4px 4px 14px #ede5d7, inset -4px -3px 14px #f2f2f27d;
+}
+
+.prev-icon + a, .next-icon + a {
+    font-weight: bold;
+    background: transparent;
+    padding: 0 8px;
+    border-radius: 5px;
+}
+
+.prev-icon + a:hover, .next-icon + a:hover {
+    color: #9b0303;
+    background: #ffd01300;
+}
+
+
+/* single post hide tags meta */
+
+div.entry-tags {
+	display: none;
+}
+
+
+/* Posts results - bricks style */
+
+.cb-post-bricks #bricks-row .brick-item .post-contents {
+	box-shadow: 0 -2px 16px 0 rgb(0 0 0 / 60%);
+	background-color: #ffeac7;
+}
+
+.cb-post-bricks #bricks-row .brick-item .post-contents .post-views {
+	background: #fff1e2;
+}
+
+
+/* search page searchbar styles */
+
+.search-form > input[type="search"] {
+	  width: 100%;
+    padding-right: 30px;
+    padding-left: 15px;
+    border-radius: 5px;
+    background: #ffe2b173;
+    border: 2px solid #6202025c;
+}
+
+
+/* sidebar searchbar styles */
+
+.wp-block-search__inside-wrapper input[type="search"] {
+	border-radius: 8px;
+	border: 1px solid #6202022b;
+}
+
+input[type="search"]:focus {
+	-webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(98 2 2 / 47%);
+}
+
+.wp-block-search__button {
+	border-radius: 8px;
+	background: #f8bd38;
+	border: none;
+}
+
+.wp-block-search__button:hover {
+	background: #ecad20;
+	color: black;
+}
+
+
+
+/* sidebar searchbar spacing */
+
+.sidebar-layout-two .widget#block-2 {
+	padding: 0 15px 30px;
+	margin-top: -5px;
+	margin-bottom: 0;
+}
+
+
+
+/* sidebar titles styles */
+
+
+aside #block-3.widget_block > div > div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+aside #block-3.widget_block > div > div > h2 {
+	  font-size: 16px;
+    background-color: #3f2717;
+    color: white;
+    text-align: center;
+    padding: 12px 10px;
+    font-weight: 400;
+    border-radius: 5px;
+		line-height: 1;
+}
+
+aside .widget_calendar .widget-title h3 {
+	font-family: 'Literata';
+	line-height: 0.5 !important;
+}
+
+aside .widget_categories .widget-title h3 {
+	font-family: 'Literata';
+	line-height: 0.5 !important;
+}
+
+
+
+
+/* sidebar recent posts list style */
+
+.wp-block-latest-posts.wp-block-latest-posts__list {
+	list-style: inside;
+	margin-left: 0 !important;
+}
+
+
+
+/* sidebar archive calendar styles */
+
+table#wp-calendar #today {
+	background: #3f2717;
+	color: white;
+	transition: all 0.3s ease-in-out;
+}
+
+table#wp-calendar #today > a {
+	color: white;
+	display: block;
+	transition: all 0.3s ease-in-out;
+}
+
+table#wp-calendar caption {
+    background: #ffeac7;
+    color: #620202;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		box-shadow: 0 0px 10px 0px rgb(0 0 0 / 25%);
+}
+
+.calendar_wrap table td, .calendar_wrap table th {
+	border-color: #3f27170f !important;
+}
+
+table#wp-calendar {
+	margin: 0 auto;
+	border-collapse: collapse;
+  width: auto;
+  box-shadow: 0 0px 10px 0px rgba(0,0,0,0.25);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+span.wp-calendar-nav-next {
+    float: right;
+    margin-right: 10px;
+}
+
+span.wp-calendar-nav-prev {
+    margin-left: 10px;
+}
+
+span.wp-calendar-nav-prev a:hover, span.wp-calendar-nav-next a:hover {
+	color: #620202;
+}
+
+aside .widget-title {
+    background: #3f2717 !important;
+		border-radius: 5px;
+}
+
+#wp-calendar > tbody > tr > td > a {
+    font-weight: 700;
+    color: #620202;
+    border-bottom: 1px solid #620202;
+	transition: all 0.2s ease-in-out;
+}
+
+#wp-calendar > tbody > tr > td > a:hover {
+	color: red;
+	border-color: red;
+	transition: all 0.2s ease-in-out;
+}
+
+/* sidebar categories widget styles */
+
+aside .widget#categories-2 {
+	padding: 45px 30px 30px;
+}
+
+
+
+/* footer styles */
+
+footer {
+    background: #3f2717;
+}
+
+body > div.page-wrap > footer > div > div > div.cb-topfooter {
+	display: none;
+}
+
+body > div.page-wrap > footer > div > div > div.cb-midfooter > div > div:nth-child(1) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .widget .widget-title h3, footer .section-title {
+	border-color: #fff6e7;
+	color: #fff6e7;
+}
+
+footer a {
+    color: #edd7bb;
+}
+
+#cream-blog-post-widget-1 > div.post-widget-container > div > div:nth-child(1) > div {
+	border-radius: 5px;
+}
+
+footer .widget .widget-title h3, footer .section-title {
+    font-family: 'Literata';
+}
+
+@media(min-width: 992px) {
+	body > div.page-wrap > footer > div > div > div.cb-midfooter > div > div:nth-child(2) {
+		padding-left: 50px;
+	}
+}
+
+#custom_html-3 > div.textwidget.custom-html-widget {
+    color: #edd7bb;
+}
+
+footer .cb-midfooter {
+	border-bottom: 1px solid #f3ecec47;
+}
+
+.copyrights-info {
+    color: #b39b7c;
+}
+
+
+footer iframe {
+	border-radius: 5px;
+
+}
+
+@media (max-width: 991px) {
+	footer iframe {
+		width: 100%;
+		height: 400px;
+	}
+	
+	footer #custom_html-3 {
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+	}
+	
+	footer #custom_html-3 h3 {
+		margin-top: 50px;
+		font-size: 28px;
+		border-left: none;
+	}
+	
+	footer #custom_html-3 .textwidget {
+		width: 100%;
+		text-align: center;
+	}
+	
+	footer #cream-blog-post-widget-1 .widget-title h3 {
+		text-align: center;
+		font-size: 28px;
+		margin-top: 50px;
+		margin-bottom: 50px !important;
+		border-left: none;
+	}
+	
+}
+
+/* copyright footer hide theme info */
+
+body > div.page-wrap > footer > div > div > div.cb-bottomfooter {
+	display: none;
+}
+
+body > div.page-wrap > footer > div > div > div.cb-midfooter > div > div:nth-child(4) {
+	  border-top: 1px solid #f3ecec47;
+    max-width: 90%;
+		margin: 0 auto;
+    flex: 0 0 100%;
+    color: #b39b7c;
+    text-align: center;
+}
+
+body > div.page-wrap > footer > div > div > div.cb-midfooter > div > div:nth-child(4) > div {
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+body > div.page-wrap > footer > div > div > div.cb-midfooter > div > div:nth-child(4) > div > div {
+	padding-top: 20px;
+}
+
+@media(max-width: 991px) {
+	#copyright-block {
+		flex-direction: column;
+	}
+}
+
+/* 404 error page styles */
+
+.error-page-bottom .btn-general {
+	border-radius: 5px;
+	font-family: 'Literata' !important;
+}
+
+.error-page-bottom .btn-general:hover {
+	  background-color: #f8bd38;
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.7);
+}
