@@ -200,6 +200,42 @@ a:hover {
 }
 
 
+/* Homepage carousel slider disable horizontal scroll*/
+
+.owl-stage {
+	transform: none !important;
+}
+
+/* Homepage carousel slider xairetismos proedrou touch-action solution */
+
+/*
+#cb-slider-style-6::after {
+    content: 'ΧΑΙΡΕΤΙΣΜΟΣ ΠΡΟΕΔΡΟΥ ΑΔΕΛΦΟΤΗΤΟΣ ΑΘΑΝΑΣΙΟΥ ΧΡ. ΚΟΚΚΙΝΟΠΟΥΛΟΥ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    font-size: 19px;
+    line-height: 23px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 14px black;
+    left: 0;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    display: flex;
+    border-radius: 10px;
+    background-image: linear-gradient(0deg, #000000, #00000000, #b5262600), url(wp-content/uploads/2022/07/kokkinopoulos-600x450.jpg);
+    z-index: 20;
+    background-size: cover;
+    background-position: center;
+}
+*/
+
+
 
 /*Homepage recent posts exceprt styles */
 
